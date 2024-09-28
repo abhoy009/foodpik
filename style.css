@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 10px;
+}
+
+.search-container input {
+  min-width: 250px;
+  padding: 10px;
+}
+
+.search-container input:focus {
+  outline: 0;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0 40px;
+}
+
+.res-card {
+  width: 200px;
+  /* height: 300px; */
+  padding: 5px;
+  /* padding-bottom: 20px; */
+  border: 1px solid transparent;
+}
+
+.res-card:hover {
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.footer {
+  padding: 20px 10px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Modern Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px; /* Responsive base font size */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container for App */
+.app {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px; /* Maximum width for better layout */
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd; /* Softer border */
+  background-color: #fff;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Adds a subtle zoom effect on hover */
+}
+
+/* Navigation */
+.nav-items ul {
+  font-size: 1.5rem;
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Modern way to add spacing between flex items */
+}
+
+.nav-items li {
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-items li:hover {
+  color: #ffcb05; /* Add hover effect for better interaction */
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 10px;
+  flex-wrap: wrap; /* Responsive for smaller screens */
+}
+
+.search-container input {
+  min-width: 250px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #ffcb05; /* Add focus border color */
+}
+
+.search-container button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #e0b600;
+}
+
+/* Restaurant Cards */
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 0 40px;
+}
+
+.res-card {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for modern look */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.res-card:hover {
+  border-color: #ffcb05;
+  transform: translateY(-5px); /* Adds a lift effect on hover */
+  cursor: pointer;
+}
+
+.res-logo {
+  width: 100%;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Footer */
+.footer {
+  padding: 20px 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #555;
+}
